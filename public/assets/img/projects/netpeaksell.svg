@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!-- green bg → YELLOW after overlay -->
+  <rect width="2000" height="900" fill="#00FF00"/>
+  <!-- black vertical bars → RED after overlay -->
+  <rect x="0"    y="0" width="140" height="900" fill="#000000"/>
+  <rect x="280"  y="0" width="140" height="900" fill="#000000"/>
+  <rect x="560"  y="0" width="140" height="900" fill="#000000"/>
+  <rect x="1300" y="0" width="140" height="900" fill="#000000"/>
+  <rect x="1580" y="0" width="140" height="900" fill="#000000"/>
+  <rect x="1860" y="0" width="140" height="900" fill="#000000"/>
+  <!-- magenta vertical bars → BLUE after overlay -->
+  <rect x="140" y="0" width="140" height="900" fill="#FF00FF"/>
+  <rect x="420" y="0" width="140" height="900" fill="#FF00FF"/>
+  <rect x="1440" y="0" width="140" height="900" fill="#FF00FF"/>
+  <rect x="1720" y="0" width="140" height="900" fill="#FF00FF"/>
+  <!-- green center panel for text (same as bg = yellow) -->
+  <rect x="700" y="200" width="600" height="500" fill="#00FF00"/>
+  <!-- black text → RED after overlay -->
+  <text x="1000" y="450" font-family="Arial Black, sans-serif" font-size="110" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="-3">NETPEAK</text>
+  <text x="1000" y="570" font-family="Arial Black, sans-serif" font-size="110" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="-3">SELL</text>
+</svg>

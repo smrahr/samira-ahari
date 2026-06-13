@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!-- cyan bg → WHITE after overlay -->
+  <rect width="2000" height="900" fill="#00FFFF"/>
+  <!-- black bars → RED after overlay -->
+  <rect x="0"    y="0" width="2000" height="160" fill="#000000"/>
+  <rect x="0"    y="740" width="2000" height="160" fill="#000000"/>
+  <!-- magenta diagonal block → BLUE after overlay -->
+  <polygon points="0,160 800,160 0,740"        fill="#FF00FF"/>
+  <polygon points="2000,160 1200,160 2000,740" fill="#FF00FF"/>
+  <!-- yellow circles → GREEN after overlay -->
+  <circle cx="400"  cy="450" r="160" fill="#FFFF00"/>
+  <circle cx="1600" cy="450" r="160" fill="#FFFF00"/>
+  <!-- black inner circles → RED after overlay -->
+  <circle cx="400"  cy="450" r="80" fill="#000000"/>
+  <circle cx="1600" cy="450" r="80" fill="#000000"/>
+  <!-- black text → RED after overlay -->
+  <text x="1000" y="430" font-family="Arial Black, sans-serif" font-size="150" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="-5">LIPACK</text>
+  <text x="1000" y="530" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="10">SALES MANAGEMENT</text>
+</svg>

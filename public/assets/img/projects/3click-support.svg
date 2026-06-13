@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!-- black bg → RED after overlay -->
+  <rect width="2000" height="900" fill="#000000"/>
+  <!-- yellow big X → GREEN after overlay -->
+  <line x1="0"    y1="0"   x2="2000" y2="900" stroke="#FFFF00" stroke-width="200"/>
+  <line x1="2000" y1="0"   x2="0"    y2="900" stroke="#FFFF00" stroke-width="200"/>
+  <!-- magenta rectangles at corners → BLUE after overlay -->
+  <rect x="0"    y="0"   width="300" height="200" fill="#FF00FF"/>
+  <rect x="1700" y="0"   width="300" height="200" fill="#FF00FF"/>
+  <rect x="0"    y="700" width="300" height="200" fill="#FF00FF"/>
+  <rect x="1700" y="700" width="300" height="200" fill="#FF00FF"/>
+  <!-- cyan center panel → WHITE after overlay -->
+  <rect x="300" y="290" width="1400" height="320" fill="#00FFFF"/>
+  <!-- black text → RED after overlay -->
+  <text x="1000" y="420" font-family="Arial Black, sans-serif" font-size="100" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="-3">3CLICK</text>
+  <text x="1000" y="535" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="8">SUPPORT MANAGEMENT</text>
+</svg>

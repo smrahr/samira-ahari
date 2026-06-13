@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!-- white bg → CYAN after overlay -->
+  <rect width="2000" height="900" fill="#FFFFFF"/>
+  <!-- magenta rings → BLUE after overlay -->
+  <circle cx="1000" cy="450" r="420" fill="#FF00FF"/>
+  <circle cx="1000" cy="450" r="340" fill="#FFFFFF"/>
+  <circle cx="1000" cy="450" r="260" fill="#FF00FF"/>
+  <circle cx="1000" cy="450" r="180" fill="#FFFFFF"/>
+  <circle cx="1000" cy="450" r="100" fill="#FF00FF"/>
+  <circle cx="1000" cy="450" r="40"  fill="#FFFFFF"/>
+  <!-- yellow ring accents → GREEN after overlay -->
+  <circle cx="1000" cy="450" r="420" fill="none" stroke="#FFFF00" stroke-width="10"/>
+  <circle cx="1000" cy="450" r="260" fill="none" stroke="#FFFF00" stroke-width="6"/>
+  <!-- black text area -->
+  <rect x="550" y="370" width="900" height="160" fill="#FFFFFF"/>
+  <!-- black text → RED after overlay -->
+  <text x="1000" y="440" font-family="Arial Black, sans-serif" font-size="110" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="-3">3CLICK</text>
+  <text x="1000" y="510" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="10">TRAVEL BOOKING</text>
+</svg>

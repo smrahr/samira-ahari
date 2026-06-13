@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!--
+    Colours reverse-engineered for mix-blend-mode:difference with red overlay.
+    overlay(255,0,0)  difference  image(R,G,B)  =  (|255-R|, G, B)
+    To get coral-red  #DC3C32 (220,60,50)   → SVG needs (35,60,50)   = #233C32
+    To get blue       #1E46A0 (30,70,160)   → SVG needs (225,70,160) = #E146A0
+    To get white      #FFFFFF (255,255,255) → SVG needs (0,255,255)  = #00FFFF
+    To get dark/black #1A1A1A              → SVG needs (235,26,26)  = #EB1A1A (near-red stays dark)
+  -->
+
+  <!-- coral-red background after overlay -->
+  <rect width="2000" height="900" fill="#233C32"/>
+
+  <!-- bold blue banner at top — blue after overlay -->
+  <rect x="0" y="0" width="2000" height="120" fill="#E146A0"/>
+  <!-- white stripe in banner — cyan → white after overlay -->
+  <rect x="0" y="120" width="2000" height="16" fill="#00FFFF"/>
+
+  <!-- bold blue banner at bottom -->
+  <rect x="0" y="764" width="2000" height="136" fill="#E146A0"/>
+  <rect x="0" y="762" width="2000" height="16" fill="#00FFFF"/>
+
+  <!-- white text label top-left style — cyan → white -->
+  <rect x="60" y="30" width="320" height="60" fill="#00FFFF"/>
+  <text x="80" y="73" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" fill="#233C32" letter-spacing="2">NOVA LAB</text>
+
+  <!-- white text label top-right mirrored -->
+  <rect x="1620" y="30" width="320" height="60" fill="#00FFFF"/>
+  <text x="1640" y="73" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" fill="#233C32" letter-spacing="2">NOVA LAB</text>
+
+  <!-- centre badge block — blue → blue after overlay -->
+  <rect x="600" y="170" width="800" height="100" fill="#E146A0"/>
+  <rect x="608" y="178" width="784" height="84"  fill="#233C32"/>
+  <!-- badge stars — white → white -->
+  <text x="660" y="246" font-family="serif" font-size="30" fill="#00FFFF">★</text>
+  <text x="1300" y="246" font-family="serif" font-size="30" fill="#00FFFF">★</text>
+  <text x="980" y="244" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#00FFFF" text-anchor="middle" letter-spacing="6">ADMIN PANEL</text>
+
+  <!-- large main title — cyan → white after overlay -->
+  <text x="1000" y="560" font-family="Arial Black, sans-serif" font-size="220" font-weight="900" fill="#00FFFF" text-anchor="middle" letter-spacing="-6">NOVA</text>
+
+  <!-- subtitle banner — blue → blue after overlay -->
+  <rect x="400" y="598" width="1200" height="80" fill="#E146A0"/>
+  <text x="1000" y="653" font-family="Arial Black, sans-serif" font-size="46" font-weight="900" fill="#00FFFF" text-anchor="middle" letter-spacing="4">LAB</text>
+
+  <!-- bottom tagline — white → white -->
+  <text x="1000" y="830" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#00FFFF" text-anchor="middle" letter-spacing="8">FINTECH · NEXT.JS · TYPESCRIPT</text>
+</svg>

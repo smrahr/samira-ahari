@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+  <!-- blue bg → MAGENTA after overlay -->
+  <rect width="2000" height="900" fill="#0000FF"/>
+  <!-- yellow stripes → GREEN after overlay -->
+  <rect x="0" y="0"   width="2000" height="180" fill="#FFFF00"/>
+  <rect x="0" y="360" width="2000" height="180" fill="#FFFF00"/>
+  <rect x="0" y="720" width="2000" height="180" fill="#FFFF00"/>
+  <!-- cyan stripes → WHITE after overlay -->
+  <rect x="0" y="180" width="2000" height="180" fill="#00FFFF"/>
+  <rect x="0" y="540" width="2000" height="180" fill="#00FFFF"/>
+  <!-- black panel for text area -->
+  <rect x="0" y="298" width="2000" height="304" fill="#0000FF"/>
+  <!-- yellow lines → green borders -->
+  <rect x="0" y="298" width="2000" height="8" fill="#FFFF00"/>
+  <rect x="0" y="594" width="2000" height="8" fill="#FFFF00"/>
+  <!-- cyan text → WHITE after overlay -->
+  <text x="1000" y="450" font-family="Arial Black, sans-serif" font-size="110" font-weight="900" fill="#00FFFF" text-anchor="middle" letter-spacing="-3">DEKA PRICING</text>
+  <text x="1000" y="552" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#FFFF00" text-anchor="middle" letter-spacing="10">REGIONAL · CONTRACTS</text>
+</svg>
