@@ -25,7 +25,6 @@ const Stage = styled.div`
   }
 `;
 
-// flowen wordmark overlay (approximated as Ephidona text) with mix-blend difference
 const Logo = styled.span`
   z-index: 100;
   position: absolute;
@@ -108,7 +107,6 @@ export default function Me() {
             </div>
           ))}
         </Stage>
-        {/* <Logo>flowen</Logo> */}
       </div>
 
       <Names>

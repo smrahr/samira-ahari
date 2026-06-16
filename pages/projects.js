@@ -98,7 +98,9 @@ const Name = styled.h2`
 
 export default function Projects() {
   return (
-    <Layout title="Projects | Rou Hun Fan | Frontend Developer & Designer">
+    <Layout
+    // title="Projects | Rou Hun Fan | Frontend Developer & Designer"
+    >
       <List>
         {PROJECTS.map((p) => (
           <Row key={p.src}>

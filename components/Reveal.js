@@ -1,8 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
 
-// Directional clip-reveal matching flowen's <Reveal direction> component:
-// inner element starts offset (top/bottom = ±100% Y, left/right = ±100% X)
-// and slides to 0 with easeOut over .5s after `delay`.
 const fromTop = keyframes`from { transform: translateY(-100%); } to { transform: translate(0,0); }`;
 const fromBottom = keyframes`from { transform: translateY(100%); } to { transform: translate(0,0); }`;
 const fromLeft = keyframes`from { transform: translateX(-100%); } to { transform: translate(0,0); }`;
@@ -41,9 +38,8 @@ export default function Reveal({ children, direction = 'bottom', delay = 0, altF
   );
 }
 
-// Shared animation timeline (seconds) — mirrors flowen's timelineIndex.
 export const T = {
-  rou: 0, hun: 0.1, fan: 0.2,
+  sami: 0, ra: 0.1, aha: 0.2, ri: 0.3,
   uiDev: 0.2, design: 0.3, motion: 0.4,
   ampersand: 0.5, frontend: 0.6,
   imgProjects: 0.45, imgMe: 0.6,

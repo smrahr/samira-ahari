@@ -18,16 +18,16 @@ export default function Header() {
   return (
     <Bar>
       <Row as="h1">
-        <Reveal direction="top" delay={T.rou}>
+        <Reveal direction="top" delay={T.sami}>
           <Link href="/">SAMI</Link>
         </Reveal>
-        <Reveal direction="top" delay={T.hun}>
+        <Reveal direction="top" delay={T.ra}>
           <Link href="/">RA</Link>
         </Reveal>
-        <Reveal direction="top" delay={T.fan}>
+        <Reveal direction="top" delay={T.aha}>
           <Link href="/">AHA</Link>
         </Reveal>
-        <Reveal direction="top" delay={T.fan}>
+        <Reveal direction="top" delay={T.ri}>
           <Link href="/">RI</Link>
         </Reveal>
       </Row>
