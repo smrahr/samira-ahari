@@ -26,10 +26,10 @@ export default function Layout({ children, title, description }) {
         <meta name="viewport" content="width=device-width" />
         <meta
           name="description"
-        // content={
-        //   description ||
-        //   'Freelance frontend UI developer and designer, Rou Hun Fan, working remotely for international clients'
-        // }
+          content={
+            description ||
+            'AI Specialist Frontend developer'
+          }
         />
       </Head>
       <Header />

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
 import Layout from "../components/Layout";
@@ -78,6 +79,9 @@ const ME = [
 ];
 
 export default function Me() {
+  const router = useRouter();
+  const short = router.query.shortAnimation === '1';
+  const d = (n) => (short ? 0 : n);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
@@ -107,6 +111,7 @@ export default function Me() {
             </div>
           ))}
         </Stage>
+        <Logo>Samira</Logo>
       </div>
 
       <Names>
@@ -121,22 +126,22 @@ export default function Me() {
       </Names>
 
       <Block>
-        <Reveal direction="top" delay={0.3}>
+        <Reveal direction="top" delay={d(0.3)}>
           /NOW
         </Reveal>
         <span className="content">
-          <Reveal direction="top" delay={0.45} altFont>
+          <Reveal direction="top" delay={d(0.45)} altFont>
             Open for contracts
           </Reveal>
         </span>
       </Block>
 
       <Block>
-        <Reveal direction="top" delay={0.4}>
+        <Reveal direction="top" delay={d(0.4)}>
           /BIO
         </Reveal>
         <span className="content">
-          <Reveal direction="top" delay={0.6} altFont>
+          <Reveal direction="top" delay={d(0.6)} altFont>
             Frontend developer who builds interfaces that think. I love the
             details — performance, clean UI, and AI baked in from day one. Five
             years in, still shipping ahead of schedule.
@@ -145,11 +150,11 @@ export default function Me() {
       </Block>
 
       <Block>
-        <Reveal direction="top" delay={0.5}>
+        <Reveal direction="top" delay={d(0.5)}>
           /FUTURE
         </Reveal>
         <span className="content">
-          <Reveal direction="top" delay={0.7} altFont>
+          <Reveal direction="top" delay={d(0.7)} altFont>
             Make a ...?
           </Reveal>
         </span>

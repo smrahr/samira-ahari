@@ -104,7 +104,12 @@ export default function Projects() {
       <List>
         {PROJECTS.map((p) => (
           <Row key={p.src}>
-            <Frame>
+            <Frame
+              as={p.url ? 'a' : 'div'}
+              href={p.url}
+              target={p.url ? '_blank' : undefined}
+              rel={p.url ? 'noopener noreferrer' : undefined}
+            >
               <Inner>
                 <Image src={p.src} alt={p.label} width={2000} height={900} sizes="100vw" />
               </Inner>

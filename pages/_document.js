@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="theme-color" content="#161b1b" />
+          <meta name="theme-color" content="#0a0a0a" />
           <meta name="google" content="notranslate" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
