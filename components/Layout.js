@@ -1,7 +1,12 @@
 import Head from 'next/head';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
+
+const scaleIn = keyframes`
+  from { transform: scale(0.35); }
+  to   { transform: scale(1); }
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,7 +14,8 @@ const Wrapper = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   padding: 10vh 0 15vh;
-  transform-origin: top;
+  transform-origin: top center;
+  animation: ${scaleIn} var(--d-slowestest) var(--ease-out) 2s both;
 `;
 
 export default function Layout({ children, title, description }) {

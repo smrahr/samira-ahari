@@ -40,10 +40,10 @@ export default function Reveal({ children, direction = 'bottom', delay = 0, altF
 
 export const T = {
   sami: 0, ra: 0.1, aha: 0.2, ri: 0.3,
-  uiDev: 0.2, design: 0.3, motion: 0.4,
-  ampersand: 0.5, frontend: 0.6,
-  imgProjects: 0.45, imgMe: 0.6,
-  creative: 0.7, available: 0.9, availableAnswer: 1.0,
+  uiDev: 0.3, design: 0.4, motion: 0.5,
+  ampersand: 0.6, frontend: 0.7,
+  imgProjects: 0.8, imgMe: 0.9,
+  creative: 1.1, available: 1.3, availableAnswer: 1.4,
   dob: 1.25, contact: 1.5, arrow: 1.55, cv: 1.6, tg: 1.65, tw: 1.7,
   returnIdx: 0.3,
 };
