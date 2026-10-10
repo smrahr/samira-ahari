@@ -103,7 +103,7 @@ export default function Home() {
               Design
             </Reveal>
             <Reveal direction="bottom" delay={T.motion}>
-              PANNEL
+              PANEL
             </Reveal>
           </div>
           <div className="stage-wrap">
@@ -118,7 +118,6 @@ export default function Home() {
           <Reveal direction="top" delay={T.ampersand} altFont>
             &amp;
           </Reveal>
-          {" "}
           <Reveal direction="top" delay={T.frontend}>
             Frontend
           </Reveal>
