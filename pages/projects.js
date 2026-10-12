@@ -35,7 +35,7 @@ const Row = styled.div`
 const Frame = styled.div`
   position: relative;
   width: 100%;
-  border: 3px solid #fff;
+  border: 3px solid var(--fg);
   cursor: pointer;
 `;
 

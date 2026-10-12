@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import GlobalStyle from '../lib/GlobalStyle';
+import ThemeToggle from '../components/ThemeToggle';
+import MarginChat from '../components/MarginChat';
 
 const NAME = 'SAMIRA AHARI';
 const FRAMES = Array.from({ length: NAME.length }, (_, i) => NAME.slice(0, i + 1));
@@ -33,6 +35,8 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
+      <ThemeToggle />
+      <MarginChat />
       <Component {...pageProps} />
     </>
   );

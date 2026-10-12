@@ -41,7 +41,7 @@ const Sheet = styled.h1`
     left: -10px;
     width: 100%;
     white-space: nowrap;
-    font-size: 7.5vw;
+    font-size: 5vw;
     font-family: var(--font-alt);
     font-weight: 400;
     font-feature-settings: "aalt" on;
@@ -50,6 +50,9 @@ const Sheet = styled.h1`
     transform: rotate(-10deg);
     transform-origin: left bottom;
     pointer-events: none;
+  }
+  :root[data-theme="gold"] & .projects-label {
+    mix-blend-mode: normal;
   }
 
   /* Row 3: me photo + creative column */
