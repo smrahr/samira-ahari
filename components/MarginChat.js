@@ -204,6 +204,8 @@ export default function MarginChat() {
   const [busy, setBusy] = useState(false);
   const [wide, setWide] = useState(false);
   const nextId = useRef(1);
+  // Set by the server on the first reply, so every note of this visit lands in one logged conversation
+  const conversationId = useRef(null);
 
   // Narrow screens start with just the input; the greeting only belongs in the wide-screen margins
   useEffect(() => {
@@ -236,9 +238,10 @@ export default function MarginChat() {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ messages: history }),
+        body: JSON.stringify({ messages: history, conversationId: conversationId.current }),
       });
       const data = await res.json().catch(() => ({}));
+      if (data.conversationId) conversationId.current = data.conversationId;
       if (data.reply) add('bot', data.reply);
       else if (res.status === 429) add('bot', 'Too many notes at once — give me a sec and try again.');
       else add('bot', 'My pen ran out of ink… try again in a bit, or reach Samira on LinkedIn.');

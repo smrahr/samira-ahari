@@ -5,3 +5,9 @@
 .DS_Store
 .dev.vars
 .wrangler
+.env
+
+# Private source material (CV, internal brand guide, build prompt)
+SamiraAhari-cv.pdf
+Samira_Ahari_Brand_Guide_v3.html
+samira-chatbot-claude-code-prompt.md

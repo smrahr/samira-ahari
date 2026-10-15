@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "kb:ingest": "node --experimental-strip-types --no-warnings scripts/ingest-kb.ts",
+    "kb:eval": "node --experimental-strip-types --no-warnings scripts/eval-chat.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.133.0",
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "styled-components": "6.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5"
   }
 }
